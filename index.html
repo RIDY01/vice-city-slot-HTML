@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Slot Game | made by RIDY01</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+           <nav>
+            <ul>
+                <li><a href="#news">News</a></li>
+                <li class="active"><a href="#game">Game</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right;"><a href="">user: anonymous</a></li>
+              </ul>
+           </nav>
+        </header>
+        <main>
+            <div id="myModal" class="modal">
+    
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="outputModal"></p>
+                </div>
+              </div>
+            <div id="slotContainer">
+                <div id="slotContainerHeader">
+                    <h1>Vice City Slot</h1>
+                </div>
+                <div id="slotContainerContent">
+                    <div class="grid-item"><p id="1"></p></div>
+                    <div class="grid-item"><p id="2"></p></div>
+                    <div class="grid-item"><p id="3"></p></div>
+                </div>
+                <div id="slotContainerFooter">
+                    <div id="slotContainerFooterCredits">
+                        <p>Credits:</p>
+                        <p id="credits"></p>
+                    </div>
+                    <button onclick="spin()" id="btnSpin">Spin!</button>
+                    <select id="selectAmountCredits">
+                        <option>10</option>
+                        <option>20</option>
+                        <option>50</option>
+                        <option>100</option>
+                    </select>
+                    <div id="slotContainerFooterVolume">
+                        <i class="fa fa-volume-up"></i>
+                        <label class="switch">
+                            <input type="checkbox" onclick="manageSound()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>made by ridy01</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
